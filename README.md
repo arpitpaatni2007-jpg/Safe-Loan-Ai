@@ -1,70 +1,184 @@
-# Getting Started with Create React App
+# 💰 SafeLoan AI — Loan Risk Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 🚀 Understand Loan Risks in Seconds using AI
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Overview
 
-### `npm start`
+**SafeLoan AI** is an AI-powered system that helps users analyze loan agreements and detect hidden financial risks.
+It uses **OCR (Optical Character Recognition)** and **NLP (Natural Language Processing)** to extract text from documents and highlight risky clauses.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This tool is especially useful for:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Students
+- First-time borrowers
+- Rural users with limited financial awareness
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Problem Statement
 
-### `npm run build`
+Many people sign loan agreements without fully understanding:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Hidden penalties
+- High interest rates
+- Complex financial terms
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⚠️ Studies show that **over 60% of borrowers do not fully understand loan documents**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 💡 Our Solution
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+SafeLoan AI solves this by:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Extracting text from images/PDFs
+- Identifying risky terms
+- Providing a **risk score (0–100)**
+- Giving **clear explanations**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+👉 Works **offline**, ensuring **privacy and accessibility**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ✨ Key Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 📄 OCR-based text extraction (images + PDFs)
+- 🧠 AI + Rule-based risk detection
+- 📊 Risk score calculation (0–100)
+- 🚨 Highlighted risky clauses
+- 🌐 Multilingual support (English + Hindi)
+- 🔒 Fully offline (no external APIs used)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧠 How It Works (Pipeline)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```text
+User Upload → OCR (Tesseract) → OpenCV Processing → NLP Analysis → Risk Score → UI Output
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🛠️ Tech Stack
 
-### Making a Progressive Web App
+### 🔹 Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React.js
+- Axios
+- CSS
 
-### Advanced Configuration
+### 🔹 Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Flask (Python)
+- OpenCV
+- Pytesseract (OCR)
+- pdf2image
+- NumPy
+- Regex (text processing)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Example Output:
 
-### `npm run build` fails to minify
+- Extracted loan text
+- Risk score
+- Highlighted risky keywords
+- Explanation of risks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🚀 How to Run Locally
+
+### 🔹 1. Clone Repository
+
+```bash
+git clone https://github.com/your-username/Safe-Loan-Ai.git
+cd Safe-Loan-Ai
+```
+
+---
+
+### 🔹 2. Backend Setup
+
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+
+👉 Runs on: `http://127.0.0.1:5001`
+
+---
+
+### 🔹 3. Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+👉 Runs on: `http://localhost:3000`
+
+---
+
+## 🌍 Multilingual Support
+
+Supports:
+
+- English 🇺🇸
+- Hindi 🇮🇳
+
+👉 Detects keywords like:
+
+- penalty / जुर्माना
+- interest / ब्याज
+- default / डिफ़ॉल्ट
+
+---
+
+## 🔮 Future Scope
+
+- 🤖 Advanced AI models (BERT / LLM)
+- 📊 Financial risk prediction
+- 🎤 Voice-based input (for rural users)
+- 📱 Mobile app development
+- 🏦 Integration with banking systems
+
+---
+
+## 🏆 What Makes Us Unique
+
+- 🔒 Works completely offline
+- 🌐 Multilingual analysis
+- ⚡ Real-time processing
+- 🧩 End-to-end system (not API-based)
+
+---
+
+## 👨‍💻 Team
+
+**Team Name:** Young Monks
+**Member:** Arpit Patni
+
+---
+
+## 📢 Conclusion
+
+SafeLoan AI empowers users to:
+
+> **Make smarter and safer financial decisions**
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project:
+
+- ⭐ Star this repo
+- 🍴 Fork it
+- 🚀 Share it
+
+---
