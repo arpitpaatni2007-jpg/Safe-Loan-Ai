@@ -1,4 +1,4 @@
-# Safe-Loan-Ai
+
 # 💰 SafeLoan AI – Loan Risk Analyzer
 
 SafeLoan AI is an AI-powered system that analyzes loan documents and detects potential financial risks such as penalties, high interest rates, and default clauses.
@@ -142,7 +142,7 @@ npm start
 ## 👨‍💻 Team
 
 **Team Name:** Young Monks
-**Member:** Arpit Patni (First Year Student)
+**Member:** Arpit Patni 
 
 ---
 
